@@ -1,0 +1,17 @@
+{
+  "testData": {
+    "valerianRoot": {
+      "id": "866a3663-ed79-4299-823c-001431854490",
+      "name": "Valerian root"
+    },
+    "knownIngredients": [
+      "Valerian root",
+      "Newt spleens",
+      "Stewed Mandrake"
+    ]
+  },
+  "validation": {
+    "expectedProperties": ["id", "name"],
+    "propertyCount": 2
+  }
+}

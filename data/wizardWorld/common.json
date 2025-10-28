@@ -1,0 +1,25 @@
+{
+  "baseUrl": "https://wizard-world-api.herokuapp.com",
+  "endpoints": {
+    "elixirs": "/Elixirs",
+    "houses": "/Houses",
+    "ingredients": "/Ingredients",
+    "spells": "/Spells",
+    "wizards": "/Wizards"
+  },
+  "commonValidation": {
+    "uuidRegex": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+    "invalidId": "invalid-id",
+    "nonExistentUUID": "00000000-0000-0000-0000-000000000000",
+    "expectedStatusCodes": {
+      "success": 200,
+      "badRequest": 400,
+      "notFound": 404,
+      "methodNotAllowed": 405
+    },
+    "performance": {
+      "maxResponseTime": 700
+    }
+  },
+  "contentType": "application/json"
+}

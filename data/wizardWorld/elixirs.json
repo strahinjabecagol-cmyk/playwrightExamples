@@ -1,0 +1,53 @@
+{
+  "baseUrl": "https://wizard-world-api.herokuapp.com",
+  "testData": {
+    "felixFelicis": {
+      "name": "Felix Felicis",
+      "id": "f552960d-dfe6-43f5-8239-63c35d6101ab",
+      "difficulty": "Advanced",
+      "sideEffects": "Giddiness and recklessness with overuse; Extremely toxic in large quantities; Highly disastrous if brewed incorrectly",
+      "inventor": {
+        "firstName": "Zygmunt",
+        "lastName": "Budge"
+      },
+      "ingredients": [
+        { "id": "3a66946a-eba8-4282-a2ab-e6ecb2e75c9c", "name": "Tincture of thyme" },
+        { "id": "64985309-27fd-4304-bd77-73d2f36ce2cb", "name": "Occamy eggshell" },
+        { "id": "a42bb92a-bb78-4296-8269-5ca95367e331", "name": "Ashwinder egg" },
+        { "id": "d4fe4f69-0a3a-48ae-88d6-7e9d3b5b23c2", "name": "Powdered common rue" },
+        { "id": "eba4dd0f-a24f-4224-ac27-db8a507af000", "name": "Squill bulb" },
+        { "id": "ec0f14b5-84a5-4c74-9602-52a79518d6d5", "name": "Murtlap tentacle" }
+      ]
+    },
+    "testElixirId": "2bc0184a-65ad-4899-90b7-3c6ce1e3156e",
+    "expectedTotalCount": 145,
+    "difficulties": {
+      "valid": ["Beginner", "Moderate", "Advanced", "OrdinaryWizardingLevel", "OneOfAKind", "Unknown"],
+      "advanced": {
+        "name": "Advanced",
+        "expectedCount": 25
+      },
+      "beginner": "Beginner",
+      "moderate": "Moderate",
+      "invalid": "InvalidDifficulty"
+    },
+    "ingredients": {
+      "valerianRoot": "Valerian root",
+      "valerianRootCount": 3,
+      "asphodel": "Asphodel"
+    },
+    "testCases": {
+      "nonExistentName": "SomethingThatDoesNotExist",
+      "nonExistentNameAlt": "Brew of the something",
+      "specialCharactersName": "Dr. Ubbly's Oblivious Unction",
+      "longQueryName": "A",
+      "longQueryRepeat": 500,
+      "caseSensitivity": {
+        "lowerCase": "felix felicis",
+        "upperCase": "FELIX FELICIS",
+        "properCase": "Felix Felicis"
+      }
+    },
+    "expectedProperties": ["id", "name", "difficulty", "ingredients", "inventors", "effect"]
+  }
+}

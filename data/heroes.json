@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Black Widow",
+    "email": "black-widow@avengers.com",
+    "status": "Active",
+    "realName": "Natasha Alianovna Romanova"
+  },
+  {
+    "name": "Captain America",
+    "email": "captain-america@avengers.com",
+    "status": "Active",
+    "realName": "Steve Rogers"
+  },
+  {
+    "name": "Spider-Man",
+    "email": "spider-man@avengers.com",
+    "status": "Active",
+    "realName": "Peter Parker"
+  },
+  {
+    "name": "Deadpool",
+    "email": "deadpool@avengers.com",
+    "status": "Active",
+    "realName": "Wade Wilson"
+  },
+  {
+    "name": "Iron Man",
+    "email": "iron-man@avengers.com",
+    "status": "Active",
+    "realName": "Anthony 'Tony' Stark"
+  },
+  {
+    "name": "Ant-Man",
+    "email": "ant-man@avengers.com",
+    "status": "Active",
+    "realName": "Eric O'Grady"
+  },
+  {
+    "name": "Hulk",
+    "email": "hulk@avengers.com",
+    "status": "Active",
+    "realName": "Robert Bruce Banner"
+  },
+  {
+    "name": "Doctor Strange",
+    "email": "doctor-strange@avengers.com",
+    "status": "Active",
+    "realName": "Stephen Vincent Strange"
+  }
+]

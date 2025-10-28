@@ -1,0 +1,46 @@
+{
+  "testData": {
+    "zygmuntBudge": {
+      "id": "f86280b1-faa6-44fd-b8a9-f7a4556f8d20",
+      "firstName": "Zygmunt",
+      "lastName": "Budge",
+      "expectedElixirs": ["Felix Felicis"]
+    },
+    "famousWizards": [
+      "Nicolas Flamel",
+      "Fred Weasley",
+      "George Weasley",
+      "Zygmunt Budge"
+    ],
+    "weasleyTwins": {
+      "fred": {
+        "firstName": "Fred",
+        "lastName": "Weasley"
+      },
+      "george": {
+        "firstName": "George",
+        "lastName": "Weasley"
+      },
+      "expectedElixirCount": 8,
+      "shouldHaveSameElixirs": true
+    },
+    "wizardsWithNullFirstName": [
+      "Mrs Skower",
+      "Dr Ubbly",
+      "Baruffio"
+    ]
+  },
+  "validation": {
+    "expectedTotalCount": 17,
+    "minWizardCount": 10,
+    "requiredProperties": [
+      "id",
+      "firstName",
+      "lastName",
+      "elixirs"
+    ],
+    "allWizardsHaveElixirs": true,
+    "minElixirsPerWizard": 1,
+    "maxElixirsPerWizard": 8
+  }
+}

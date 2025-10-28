@@ -1,0 +1,57 @@
+{
+  "expectedCount": 4,
+  "houses": {
+    "gryffindor": {
+      "name": "Gryffindor",
+      "houseColours": "Scarlet and gold",
+      "founder": "Godric Gryffindor",
+      "animal": "Lion",
+      "element": "Fire",
+      "ghost": "Nearly-Headless Nick",
+      "commonRoom": "Gryffindor Tower",
+      "traits": ["Courage", "Bravery", "Daring"]
+    },
+    "ravenclaw": {
+      "name": "Ravenclaw",
+      "houseColours": "Blue and bronze",
+      "founder": "Rowena Ravenclaw",
+      "animal": "Eagle",
+      "element": "Air",
+      "ghost": "Grey Lady",
+      "commonRoom": "Ravenclaw Tower"
+    },
+    "hufflepuff": {
+      "name": "Hufflepuff",
+      "houseColours": "Yellow and black",
+      "founder": "Helga Hufflepuff",
+      "animal": "Badger",
+      "element": "Earth",
+      "ghost": "Fat Friar",
+      "commonRoom": "Hufflepuff Basement"
+    },
+    "slytherin": {
+      "name": "Slytherin",
+      "id": "a9704c47-f92e-40a4-8771-ed1899c9b9c1",
+      "houseColours": "Green and silver",
+      "founder": "Salazar Slytherin",
+      "animal": "Serpent",
+      "element": "Water",
+      "ghost": "Bloody Baron",
+      "commonRoom": "Slytherin Dungeon"
+    }
+  },
+  "expectedHouseNames": ["Gryffindor", "Ravenclaw", "Hufflepuff", "Slytherin"],
+  "expectedElements": ["Fire", "Air", "Earth", "Water"],
+  "requiredProperties": [
+    "id",
+    "name",
+    "houseColours",
+    "founder",
+    "animal",
+    "element",
+    "ghost",
+    "commonRoom",
+    "heads",
+    "traits"
+  ]
+}

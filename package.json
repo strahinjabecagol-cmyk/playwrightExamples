@@ -1,0 +1,22 @@
+{
+  "name": "s1ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.0",
+    "pdf-parse": "^2.2.5",
+    "playwright": "^1.56.0"
+  },
+  "dependencies": {
+    "jimp": "^1.6.0",
+    "jsqr": "^1.4.0",
+    "pdf2json": "^3.2.2"
+  }
+}

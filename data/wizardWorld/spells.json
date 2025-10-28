@@ -1,0 +1,52 @@
+{
+  "testData": {
+    "expelliarmus": {
+      "id": "8dac9868-5aea-4fba-9b02-f322168f52be",
+      "incantation": "Expelliarmus"
+    },
+    "knownSpells": [
+      "Expelliarmus",
+      "Lumos",
+      "Alohomora",
+      "Avada Kedavra"
+    ]
+  },
+  "validation": {
+    "minSpellCount": 300,
+    "maxSpellCount": 400,
+    "expectedTotalCount": 305,
+    "requiredProperties": [
+      "id",
+      "name",
+      "incantation",
+      "effect",
+      "type"
+    ],
+    "validTypes": [
+      "Spell",
+      "Charm",
+      "Curse",
+      "Hex",
+      "Jinx",
+      "CounterSpell",
+      "CounterJinx",
+      "CounterCharm",
+      "HealingSpell",
+      "DarkCharm",
+      "Enchantment",
+      "Transfiguration"
+    ]
+  },
+  "knownIssues": {
+    "duplicateSpells": [
+      {
+        "name": "Finestra spell",
+        "ids": [
+          "76b03853-c1ce-4916-b3fc-366996b94512",
+          "6859f601-cb03-46bc-97c2-c0f60b34d85e"
+        ],
+        "reason": "Data quality issue - same spell appears twice with different IDs"
+      }
+    ]
+  }
+}
