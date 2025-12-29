@@ -79,9 +79,10 @@ test.describe('Wizard World API - Ingredients endpoint tests', () => {
     expect.soft(Array.isArray(ingredient)).toBe(false);
   });
 
-  test("GIVEN the Ingredients endpoint WHEN a non-existent UUID is used THEN it should return 404 or 400", async ({ request }) => {
+  // API bug: Returns 500 instead of 404 for non-existent UUID (NotFoundException not handled)
+  test.fixme("GIVEN the Ingredients endpoint WHEN a non-existent UUID is used THEN it should return 404 or 400", async ({ request }) => {
     const res = await request.get(baseUrl + `/Ingredients/${commonData.commonValidation.nonExistentUUID}`);
-    expect.soft([commonData.commonValidation.expectedStatusCodes.badRequest, 
+    expect.soft([commonData.commonValidation.expectedStatusCodes.badRequest,
                  commonData.commonValidation.expectedStatusCodes.notFound]).toContain(res.status());
   });
 

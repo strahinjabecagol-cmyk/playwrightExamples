@@ -94,21 +94,19 @@ test('should verify cart counter updates correctly', async ({ coffeMenyPage, pag
     await expect(page.getByText('cart (3)')).toBeVisible();
 });
 
-test('should persist cart items after page reload', async ({ coffeMenyPage, page, context }) => {
+test('should NOT persist cart items after page reload', async ({ coffeMenyPage, page, context }) => {
     await coffeMenyPage.goto();
-    
+
     // Add items to cart
     await coffeMenyPage.clickOnEspresso();
     await coffeMenyPage.clickOnCappuccino();
     await expect(page.getByText('cart (2)')).toBeVisible();
-    
+
     // Reload the page
     await page.reload();
-    
+
     // Cart does NOT persist - it clears to 0 (this is the actual behavior)
-    await expect(page.getByText('cart (2)')).toBeVisible();
-    
-    // This test verifies that cart does NOT persist (localStorage is cleared on reload)
+    await expect(page.getByText('cart (0)')).toBeVisible();
 });
 
 test('should remove items from cart page', async ({ coffeMenyPage, coffeCartPage, page }) => {

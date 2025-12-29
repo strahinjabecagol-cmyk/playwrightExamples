@@ -46,13 +46,17 @@ export class SbecagolCalculatorPom extends BasePom {
     // Theme Toggle
     readonly themeToggleButton: Locator;
 
+    // Calculator application container
+    readonly calculatorApp: Locator;
+
     constructor(page: Page, expect: PlaywrightExpect) {
         super(page, expect);
         this.url = "https://sbecagol.com/test-apps/calculator/";
 
         // Display elements - using more specific selectors
         // The calculator has a wrapper div containing two display divs
-        const calculatorApp = this.page.getByRole('application', { name: 'Calculator' });
+        this.calculatorApp = this.page.getByRole('application', { name: 'Calculator' });
+        const calculatorApp = this.calculatorApp;
         this.displayElement = calculatorApp.locator('> div:first-child > div:nth-child(2)');
         this.expressionDisplay = calculatorApp.locator('> div:first-child > div:first-child');
 
@@ -234,11 +238,11 @@ export class SbecagolCalculatorPom extends BasePom {
 
     /**
      * Press Backspace key
+     * Note: Uses button click because keyboard Backspace triggers browser back navigation
+     * The calculator app doesn't call preventDefault() on Backspace keydown events
      */
     async pressBackspace(): Promise<void> {
-        // Focus calculator to prevent browser back navigation
-        await this.displayElement.click();
-        await this.page.keyboard.press('Backspace');
+        await this.buttonBackspace.click();
     }
 
     /**
