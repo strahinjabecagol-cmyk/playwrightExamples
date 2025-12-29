@@ -22,7 +22,4 @@ export class UtilQrCode {
         //console.log('Decoded QR text:', code.data);
         return code.data;
     }
-
-
-
 }

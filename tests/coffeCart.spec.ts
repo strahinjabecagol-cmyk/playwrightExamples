@@ -106,7 +106,7 @@ test('should persist cart items after page reload', async ({ coffeMenyPage, page
     await page.reload();
     
     // Cart does NOT persist - it clears to 0 (this is the actual behavior)
-    await expect(page.getByText('cart (0)')).toBeVisible();
+    await expect(page.getByText('cart (2)')).toBeVisible();
     
     // This test verifies that cart does NOT persist (localStorage is cleared on reload)
 });
